@@ -38,6 +38,13 @@ spec:
       containers:
       - name: sunshine
         image: jcregistry/sunshine:v1.0
+        resources:
+          limits:
+            memory: 50Mi
+            cpu: 50m
+          requests:
+            memory: 50Mi
+            cpu: 50m
         env:
         - name: KUBERNETES_SERVICE_HOST
           value: kubernetes.default
