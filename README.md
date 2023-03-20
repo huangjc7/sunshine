@@ -19,3 +19,6 @@ kubectl apply -f https://raw.githubusercontent.com/huangjc7/sunshine/master/mani
 | Environment Variable                  | Description                                  | Default |
 |----------------------|----------------------------------------------|---------|
 | `POD_RESTART_NUMBER` |When the pod restart threshold is met, the deployment will be closed                                | `50`    |
+
+<video src="video/1.mp4" width="800px" height="600px" controls="controls"></video>
+
