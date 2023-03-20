@@ -20,5 +20,8 @@ kubectl apply -f https://raw.githubusercontent.com/huangjc7/sunshine/master/mani
 |----------------------|----------------------------------------------|---------|
 | `POD_RESTART_NUMBER` |When the pod restart threshold is met, the deployment will be closed                                | `50`    |
 
-<video src="video/1.mp4" width="800px" height="600px" controls="controls"></video>
-
+#### Effect demonstration
+* Close restart the abnormal pod
+[![asciicast](https://asciinema.org/a/63LI8NZ8lHpq5aNJcwf4EWCa7.svg)](https://asciinema.org/a/63LI8NZ8lHpq5aNJcwf4EWCa7)
+* If there is a running instance in the version controlled by the deployment, it will not be scaled down.
+[![asciicast](https://asciinema.org/a/3yL3W0F0pysuTvt28926uhyqs.svg)](https://asciinema.org/a/3yL3W0F0pysuTvt28926uhyqs)
