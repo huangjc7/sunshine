@@ -8,6 +8,8 @@
 3. Reduce useless resource consumption, alarm information, and kube-scheduler scheduling pressure
 #### Applicable scene
 * Suitable for multi-tenant messy kubernetes cluster
+#### Supported kubernetes versions
+* kubernetes v1.17+
 #### Use
 ```shell
 kubectl apply -f https://raw.githubusercontent.com/huangjc7/sunshine/master/manifests/sunshine.yaml

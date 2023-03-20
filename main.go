@@ -118,6 +118,8 @@ func init() {
 }
 
 func main() {
+	log.Println("Project address: https://github.com/huangjc7/sunshine")
+
 	r, _ := strconv.ParseInt(restartNumber, 10, 32) //string转int32
 
 	clientset := getKubeConfig()
