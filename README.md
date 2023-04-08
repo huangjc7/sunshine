@@ -22,6 +22,6 @@ kubectl apply -f https://raw.githubusercontent.com/huangjc7/sunshine/master/mani
 
 #### Effect demonstration
 * Close restart the abnormal pod
-[![asciicast](https://asciinema.org/a/63LI8NZ8lHpq5aNJcwf4EWCa7.svg)](https://asciinema.org/a/63LI8NZ8lHpq5aNJcwf4EWCa7)
+  [![asciicast](https://asciinema.org/a/WLk3bPJeabuJFHiwk3UaeOKqH.svg)](https://asciinema.org/a/WLk3bPJeabuJFHiwk3UaeOKqH)
 * If there is a running instance in the version controlled by the deployment, it will not be scaled down.
-[![asciicast](https://asciinema.org/a/3yL3W0F0pysuTvt28926uhyqs.svg)](https://asciinema.org/a/3yL3W0F0pysuTvt28926uhyqs)
+  [![asciicast](https://asciinema.org/a/vevMmKQww0epYGDNeVrC4n61k.svg)](https://asciinema.org/a/vevMmKQww0epYGDNeVrC4n61k)
