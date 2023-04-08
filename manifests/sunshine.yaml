@@ -51,4 +51,4 @@ spec:
         - name: KUBERNETES_SERVICE_PORT
           value: "443"
         - name: POD_RESTART_NUMBER
-          value: "3"
+          value: "50"
