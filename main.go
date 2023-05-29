@@ -99,9 +99,11 @@ func offUnHealthyApp(pod []*coreV1.Pod, namespace string, restartNumber int32, d
 		for _, owner := range p.OwnerReferences {
 			//完成kind判断以后 就可以避开静态pod不存在这个字段而报错 index out of range [0] with length 0
 			if owner.Kind == "ReplicaSet" {
-				if p.Status.ContainerStatuses[0].Ready == false && p.Status.ContainerStatuses[0].RestartCount >= restartNumber {
-					//将获取的relicaset名字切割末尾的11位字符串(包含-)得到deployment名字 存入切片为了pod去重
-					rslice = append(rslice, p.OwnerReferences[0].Name[0:len(p.OwnerReferences[0].Name)-11])
+				if len(p.Status.ContainerStatuses) != 0 {
+					if p.Status.ContainerStatuses[0].Ready == false && p.Status.ContainerStatuses[0].RestartCount >= restartNumber {
+						//将获取的relicaset名字切割末尾的11位字符串(包含-)得到deployment名字 存入切片为了pod去重
+						rslice = append(rslice, p.OwnerReferences[0].Name[0:len(p.OwnerReferences[0].Name)-11])
+					}
 				}
 			}
 		}

@@ -1,4 +1,4 @@
-module sunshine
+module github.com/huangjc7/sunshine
 
 go 1.19
 

@@ -37,7 +37,7 @@ spec:
       serviceAccountName: sunshine-as
       containers:
       - name: sunshine
-        image: jcregistry/sunshine:v1.0
+        image: jcregistry/sunshine:v1.1
         resources:
           limits:
             memory: 50Mi
